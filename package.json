@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "r": "node index.js"
   },
-  "dependencies": {
-    "discord.js": "^11.5.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinhu555/nodejsbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinhu555/nodejsbot/issues"
+  },
+  "homepage": "https://github.com/sinhu555/nodejsbot#readme"
 }
