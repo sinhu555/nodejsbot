@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.argv.length == 2 ? process.env.token : '';
+const token = process.argv.length == 2 ? process.env.token : 'NzQ5NTY1MDcyMzg4NTIyMDE0.X0t03w.Qpi8D5z4mYjWWwzNFw2AYubrJJo';
 const welcomeChannelName = "welcome";
 const byeChannelName = "welcome";
 const welcomeChannelComment = "어서오세요.";
@@ -31,10 +31,69 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == '!테스트') {
-    return message.reply('테스트 명령어.');
-  }
-
+  if(message.content == 'ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ') {
+    return message.reply('명령어(뭐이짜슥아...도배 정지 줄까?');
+  }  if(message.content == '!구걸') {
+    return message.reply('구걸완료.성공됌✅');
+  }  if(message.content == '!테스트') {
+    return message.reply('테스트 명령어 작동 됌');
+  }  if(message.content == '!봇') {
+    return message.reply('디스코드 도우미 역할');
+  }    if(message.content == '!도움') {
+    return message.reply('!명령어를 춰주세요 공식사이트:https://discord.gg/SmFJSbc');
+  }    if(message.content == '!유튜브') {
+    return message.reply('신느님에 유튜브:https://www.youtube.com/channel/UCkR6L-Ld1rBgAKraC4hpMHQ?view_as=subscriber');
+  }    if(message.content == '!넌 뒤졌어') {
+    return message.reply('끄악.......아직한발 남지못했다....');
+  }    if(message.content == '!도배 타이툴') {
+    return message.reply('제영상은 아니지만:https://youtu.be/PSN7yQx-FTY');
+  }    if(message.content == '!명령어') {
+    return message.reply('명령어:(!구걸,!테스트,!봇,!도움,!유튜브,!넌뒤졌어,!도배 타이툴,봇 제작,신느,!힘들다,!니얼굴,!디스코드,!구박,!코딩,!제접,!복붙,!게임,!참고자료,신느디스코드,!상점,!만원,!코드,)');
+  }    if(message.content == '!봇 제작') {
+    return message.reply('사이트 1.node.js:https://nodejs.org/ko/ 2.vs code:https://code.visualstudio.com/');
+  }    if(message.content == '신느') {
+    return message.reply('최근영상:https://youtu.be/45n0a5hN2cc');
+  }    if(message.content == '!힘들다....') {
+    return message.reply('저도 힘들어요...');
+  }   if(message.content == '!쌉가능') {
+    return message.reply('뭐가 쌉가능이야?');
+  }    if(message.content == '!니얼굴') {
+    return message.reply('내얼굴이 뭐');
+  }    if(message.content == '옙') {
+    return message.reply('싸가지 없음 정지 ㄱㄱ');
+  }    if(message.content == '!디스코드') {
+    return message.reply('디스코드:https://discord.gg/c2C2JP');
+  }     if(message.content == '!구박') {
+    return message.reply('넌 돈도없어 ㅋㅋ');
+  }     if(message.content == '!코딩') {
+    return message.reply('코딩에 필료한제품 파이썬 파이참,노드 vs코드');
+  }     if(message.content == '!제접') {
+    return message.reply('제접중입니다 완료됐었습니다');
+  }     if(message.content == '!복붙') {
+    return message.reply('복사 붙여 넣으는중 !북붙 완료');
+  }     if(message.content == '!게임') {
+    return message.reply('(보스,대미지,궁,힐,캐릭터');
+  }     if(message.content == '!보스') {
+    return message.reply('보스를 해치우지못하셨습니다ㅠㅠ');
+  }     if(message.content == '!대미지') {
+    return message.reply('당신의 넣은 대미지 3021입니다');
+  }     if(message.content == '!궁') {
+    return message.reply('아이템 재료 못생긴건업나 확인중');
+  }     if(message.content == '!힐') {
+    return message.reply('영웅은죽지않아요');
+  }     if(message.content == '!캐릭터') {
+    return message.reply('일반🔓,고수🔒,보통🔒');
+  }     if(message.content == '!참고 자료') {
+    return message.reply('신느가 쓰는 편집기 뱁믹스,곰믹스');
+  }     if(message.content == '!신느디스코드') {
+    return message.reply('자료실 서버:https://discord.gg/c2C2JP');
+  }     if(message.content == '!코드') {
+    return message.reply('몰름');
+  }     if(message.content == '!만원') {
+    return message.reply('.............');
+  }     if(message.content == '!상점') {
+    return message.reply('신느봇사이트로 전해주세요 사이트:https://discord.gg/c2C2JP');
+  } 
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
     let embed = new Discord.RichEmbed()
