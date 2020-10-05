@@ -51,7 +51,7 @@ client.on('message', (message) => {
   }    if(message.content == '!도배 타이툴') {
     return message.reply('제영상은 아니지만:https://youtu.be/PSN7yQx-FTY');
   }    if(message.content == '!명령어') {
-    return message.reply('명령어:(!구걸,!테스트,!봇,!도움,!유튜브,!넌뒤졌어,!도배 타이툴,봇 제작,신느,!힘들다,!니얼굴,!디스코드,!구박,!코딩,!제접,!복붙,!게임,!참고자료,신느디스코드,!상점,!만원,!코드,)');
+    return message.reply('명령어:(!구걸,!테스트,!봇,!도움,!유튜브,!넌뒤졌어,!도배 타이툴,봇 제작,신느,!힘들다,!니얼굴,!디스코드,!구박,!코딩,!제접,!복붙,!게임,!참고자료,신느디스코드,!상점,!만원,!코드,청소(100아래)embed,embed2,!전체공지,!전체공지2,!초대코드,초대코드2,)디스코드 에서봐주세요 #봇명령어 로 `디스코드`:https://discord.gg/YSA72GU');
   }    if(message.content == '!봇 제작') {
     return message.reply('사이트 1.node.js:https://nodejs.org/ko/ 2.vs code:https://code.visualstudio.com/');
   }    if(message.content == '신느') {
