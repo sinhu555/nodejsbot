@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;'';
-const welcomeChannelName = "welcome";
-const byeChannelName = "welcome";
-const welcomeChannelComment = "어서오세요.";
+const welcomeChannelName = "wolcome";
+const byeChannelName = "wolcome";
+const welcomeChannelComment = "안녕하세요.";
 const byeChannelComment = "안녕히가세요.";
 
 client.on('ready', () => {
@@ -31,8 +31,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == '넵') {
-    return message.reply('명령어(뭐이짜슥아...도배 정지 줄까?');
+  if(message.content == '테스트') {
+    message.channel.send('카아아앜퉤');
   }  if(message.content == '!구걸') {
     return message.reply('구걸완료.성공됌✅');
   }  if(message.content == '!테스트') {
@@ -100,7 +100,7 @@ client.on('message', (message) => {
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
       .setURL('http://www.naver.com')
-      .setAuthor('디스코드 봇', img, 'http://www.naver.com')
+      .setAuthor('나긋해', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
       .addField('Inline field title', 'Some value here')
@@ -110,7 +110,7 @@ client.on('message', (message) => {
       .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('디스코드 봇(이)가 만듬', img)
+      .setFooter('나긋해가 만듬', img)
 
     message.channel.send(embed)
   } else if(message.content == 'embed2') {
@@ -123,9 +123,9 @@ client.on('message', (message) => {
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 디스코드 BOT', helpImg)
+      .setAuthor('Help of 콜라곰 BOT', helpImg)
       .setColor('#186de6')
-      .setFooter(`디스코드 BOT ❤️`)
+      .setFooter(`콜라곰 BOT ❤️`)
       .setTimestamp()
     
     commandList.forEach(x => {
