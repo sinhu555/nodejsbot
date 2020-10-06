@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.argv.length == 2 ? process.env.token : "";
+const token = process.argv.length == 2 ? process.env.token : "NzU3ODI0Mjk2OTQ0MTQwMzU4.X2mA4A.j5cKttSajUY-xGTLHklxyLG0Nro";
 const moment = require("moment");
 require("moment-duration-format");
 const welcomeChannelName = "welcome";
@@ -20,7 +20,7 @@ client.on("guildMemberAdd", (member) => {
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
 
-  member.addRole(guild.roles.find(role => role.name == "게스트"));
+  member.addRole(guild.roles.find(role => role.name == "멤버"));
 });
 
 client.on("guildMemberRemove", (member) => {
