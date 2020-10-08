@@ -14,8 +14,9 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return None
-    if message.content == "안녕":
-        await message.channel.send("안녕!")
-    if message.content == "콘스":
-        await message.channel.send("코스스")
-client.run("NzQ5NTYxNjA0OTMyMjM5NDEw.X0txpA.ilZ2735OW-1terCpO8EMThLR1Bg")
+    if message.content == "!봇":
+        await message.channel.send("난봇임")
+    if message.content == "24":
+        await message.channel.send("24시간")
+
+client.run("NzYzNjUwNTU3OTQ0MDA0NjU4.X36zAA.haJ5ibQr27Wt-AkZtU_1IAHE9TE")

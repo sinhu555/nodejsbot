@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
+const moment = require("moment");
+require("moment-duration-format");
 const welcomeChannelName = "welcome";
 const byeChannelName = "welcome";
 const welcomeChannelComment = "어서오세요.";
@@ -49,7 +51,7 @@ client.on('message', (message) => {
   }    if(message.content == '!도배 타이툴') {
     return message.reply('제영상은 아니지만:https://youtu.be/PSN7yQx-FTY');
   }    if(message.content == '!명령어') {
-    return message.reply('명령어:(!구걸,!테스트,!봇,!도움,!유튜브,!넌뒤졌어,!도배 타이툴,봇 제작,신느,!힘들다,!니얼굴,!디스코드,!구박,!코딩,!제접,!복붙,!게임,!참고자료,신느디스코드,!상점,!만원,!코드,)');
+    return message.reply('명령어:(!구걸,!테스트,!봇,!도움,!유튜브,!넌뒤졌어,!도배 타이툴,봇 제작,신느,!힘들다,!니얼굴,!디스코드,!구박,!코딩,!제접,!복붙,!게임,!참고자료,신느디스코드,!상점,!만원,!코드,!애니,!아니,!신느,!초대코드,!초대코드2,embed,!전체공지2,!전체공지,!초대콛,!초대코드2,디스코드 서버:https://discord.gg/YSA72GU)');
   }    if(message.content == '!봇 제작') {
     return message.reply('사이트 1.node.js:https://nodejs.org/ko/ 2.vs code:https://code.visualstudio.com/');
   }    if(message.content == '신느') {
@@ -94,6 +96,43 @@ client.on('message', (message) => {
     return message.reply('.............');
   }     if(message.content == '!상점') {
     return message.reply('신느봇사이트로 전해주세요 사이트:https://discord.gg/c2C2JP');
+  }  if(message.content == '!애니') {
+    message.channel.send('나루토!!!!!!');
+  }  if(message.content == '!신느') {
+    message.channel.send('𝓝𝓪𝓻𝓾𝓽𝓸#1482');
+  }  if(message.content == '!아니') {
+    message.channel.send('아니 왜뭐');
+  }
+
+  if(message.content == '!si') {
+    let embed = new Discord.RichEmbed()
+    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+    var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
+    embed.setColor('#186de6')
+    embed.setAuthor('server info of 콜라곰 BOT', img)
+    embed.setFooter(`콜라곰 BOT ❤️`)
+    embed.addBlankField()
+    embed.addField('RAM usage',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
+    embed.addField('running time', `${duration}`, true);
+    embed.addField('user',         `${client.users.size.toLocaleString()}`, true);
+    embed.addField('server',       `${client.guilds.size.toLocaleString()}`, true);
+    // embed.addField('channel',      `${client.channels.size.toLocaleString()}`, true);
+    embed.addField('Discord.js',   `v${Discord.version}`, true);
+    embed.addField('Node',         `${process.version}`, true);
+    
+    let arr = client.guilds.array();
+    let list = '';
+    list = `\`\`\`css\n`;
+    
+    for(let i=0;i<arr.length;i++) {
+      // list += `${arr[i].name} - ${arr[i].id}\n`
+      list += `${arr[i].name}\n`
+    }
+    list += `\`\`\`\n`
+    embed.addField('list:',        `${list}`);
+
+    embed.setTimestamp()
+    message.channel.send(embed);
   }
 
   if(message.content == 'embed') {
