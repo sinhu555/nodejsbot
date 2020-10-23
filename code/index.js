@@ -1,14 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const token = '';
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log('켰다.');
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+client.on('message', (message) => {
+  if(message.content === 'ping') {
+    message.reply('pong');
   }
 });
 
-client.login('NzU1MzUwMjc1NzUzMTE1Njg5.X2CAww.wByJROBKAr5lgQ2W5AP0-R78Xfc');
+client.login(token);

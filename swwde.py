@@ -2,7 +2,7 @@ import discord
 import asyncio
 
 client = discord.Client()
-game = discord.Game("ㅋㅋㅋㅋㅋㅋㅋ")
+game = discord.Game("상태메세지")
 
 @client.event
 async def on_ready():
@@ -14,9 +14,7 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return None
-    if message.content == "!봇":
-        await message.channel.send("난봇임")
-    if message.content == "24":
-        await message.channel.send("24시간")
+    if message.content == "안녕":
+        await message.channel.send("안녕!")
 
-client.run("NzYzNjUwNTU3OTQ0MDA0NjU4.X36zAA.haJ5ibQr27Wt-AkZtU_1IAHE9TE")
+client.run("NzQ0MTA2NTcxMDY3NDI0ODE4.XzeZPw.lV9M90PiBpnDhatkgJnmKby3mso")

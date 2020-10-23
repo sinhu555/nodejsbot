@@ -10,4 +10,4 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('pong! {0}초'.format(bot.latency))
 
-bot.run('NzQ5NTYxNjA0OTMyMjM5NDEw.X0txpA.cV7ymrMfyLaxm6FEx2075EMiGVA')
+bot.run('NzQ5Mjc0NjMxMjY5MjUzMTUw.X0pmYA.xdf5rm0cqZ8gqBK3jupLU_DD9Gg')
